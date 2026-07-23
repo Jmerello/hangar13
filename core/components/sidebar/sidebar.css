@@ -1,0 +1,193 @@
+/* ==========================================================
+   HANGAR 13 SIDEBAR COMPONENT
+========================================================== */
+
+
+.h13-sidebar{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:260px;
+
+    height:100vh;
+
+    background:var(--surface);
+
+    border-right:1px solid var(--border);
+
+    box-shadow:var(--shadow-sm);
+
+    display:flex;
+
+    flex-direction:column;
+
+    transition:.3s ease;
+
+    z-index:200;
+
+}
+
+
+
+/* Header */
+
+
+.h13-sidebar-header{
+
+    height:70px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:0 22px;
+
+    border-bottom:1px solid var(--border);
+
+    font-size:1.2rem;
+
+    font-weight:800;
+
+}
+
+
+
+/* Navigation */
+
+
+.h13-sidebar-menu{
+
+    flex:1;
+
+    padding:20px 12px;
+
+    overflow-y:auto;
+
+}
+
+
+
+.h13-sidebar-section{
+
+    margin-bottom:25px;
+
+}
+
+
+
+.h13-sidebar-title{
+
+    padding:8px 12px;
+
+    font-size:.75rem;
+
+    text-transform:uppercase;
+
+    color:var(--text-light);
+
+    font-weight:700;
+
+}
+
+
+
+.h13-sidebar-link{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:12px 14px;
+
+    border-radius:var(--radius-sm);
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:.2s ease;
+
+}
+
+
+
+.h13-sidebar-link:hover{
+
+    background:rgba(0,102,204,.08);
+
+    color:var(--primary);
+
+}
+
+
+
+.h13-sidebar-link.active{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+
+
+/* Footer */
+
+
+.h13-sidebar-footer{
+
+    padding:15px;
+
+    border-top:1px solid var(--border);
+
+}
+
+
+
+/* Mobile */
+
+
+.h13-sidebar-toggle{
+
+    display:none;
+
+    cursor:pointer;
+
+}
+
+
+
+@media(max-width:900px){
+
+
+    .h13-sidebar{
+
+        transform:translateX(-100%);
+
+    }
+
+
+
+    .h13-sidebar.open{
+
+        transform:translateX(0);
+
+    }
+
+
+
+    .h13-sidebar-toggle{
+
+        display:block;
+
+    }
+
+}
