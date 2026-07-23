@@ -1,0 +1,167 @@
+/* ==========================================================
+   HANGAR 13 TOOLTIP COMPONENT
+========================================================== */
+
+
+.h13-tooltip{
+
+    position:relative;
+
+    display:inline-flex;
+
+    cursor:pointer;
+
+}
+
+
+.h13-tooltip-text{
+
+    position:absolute;
+
+    z-index:1000;
+
+    background:#111;
+
+    color:white;
+
+    padding:8px 12px;
+
+    border-radius:var(--radius-sm);
+
+    font-size:.8rem;
+
+    white-space:nowrap;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:
+
+    opacity .2s ease,
+
+    transform .2s ease;
+
+}
+
+
+/* Positions */
+
+
+.h13-tooltip-top .h13-tooltip-text{
+
+    bottom:calc(100% + 10px);
+
+    left:50%;
+
+    transform:
+
+    translateX(-50%)
+
+    translateY(5px);
+
+}
+
+
+.h13-tooltip-bottom .h13-tooltip-text{
+
+    top:calc(100% + 10px);
+
+    left:50%;
+
+    transform:
+
+    translateX(-50%)
+
+    translateY(-5px);
+
+}
+
+
+.h13-tooltip-left .h13-tooltip-text{
+
+    right:calc(100% + 10px);
+
+    top:50%;
+
+    transform:
+
+    translateY(-50%)
+
+    translateX(5px);
+
+}
+
+
+.h13-tooltip-right .h13-tooltip-text{
+
+    left:calc(100% + 10px);
+
+    top:50%;
+
+    transform:
+
+    translateY(-50%)
+
+    translateX(-5px);
+
+}
+
+
+
+/* Show */
+
+
+.h13-tooltip:hover .h13-tooltip-text,
+
+.h13-tooltip.active .h13-tooltip-text{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+
+.h13-tooltip-top:hover .h13-tooltip-text{
+
+    transform:
+
+    translateX(-50%)
+
+    translateY(0);
+
+}
+
+
+.h13-tooltip-bottom:hover .h13-tooltip-text{
+
+    transform:
+
+    translateX(-50%)
+
+    translateY(0);
+
+}
+
+
+.h13-tooltip-left:hover .h13-tooltip-text{
+
+    transform:
+
+    translateY(-50%)
+
+    translateX(0);
+
+}
+
+
+.h13-tooltip-right:hover .h13-tooltip-text{
+
+    transform:
+
+    translateY(-50%)
+
+    translateX(0);
+
+}
