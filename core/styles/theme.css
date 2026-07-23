@@ -1,1 +1,94 @@
 
+/* =====================================================
+   HANGAR 13
+   Global Theme
+===================================================== */
+
+*,
+*::before,
+*::after{
+    box-sizing:border-box;
+}
+
+html,
+body{
+    width:100%;
+    min-height:100%;
+    margin:0;
+    padding:0;
+    background:var(--background);
+    color:var(--text);
+}
+
+body{
+    overflow-x:hidden;
+    font-family:var(--font-family);
+}
+
+img{
+    display:block;
+    max-width:100%;
+}
+
+button,
+input,
+textarea,
+select{
+    font-family:inherit;
+    font-size:inherit;
+}
+
+hr{
+    border:none;
+    border-top:1px solid var(--border);
+    margin:var(--space-lg) 0;
+}
+
+.hidden{
+    display:none!important;
+}
+
+.flex{
+    display:flex;
+}
+
+.flex-column{
+    flex-direction:column;
+}
+
+.flex-center{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.space-between{
+    justify-content:space-between;
+}
+
+.text-center{
+    text-align:center;
+}
+
+.round{
+    border-radius:var(--radius-round);
+}
+
+.shadow-sm{
+    box-shadow:var(--shadow-sm);
+}
+
+.shadow-md{
+    box-shadow:var(--shadow-md);
+}
+
+.shadow-lg{
+    box-shadow:var(--shadow-lg);
+}
+
+.surface{
+    background:var(--surface);
+    border-radius:var(--radius-md);
+    box-shadow:var(--shadow-sm);
+    padding:var(--space-lg);
+}
