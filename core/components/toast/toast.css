@@ -1,0 +1,115 @@
+/* ==========================================================
+   HANGAR 13 TOAST COMPONENT
+========================================================== */
+
+.h13-toast-container{
+
+    position:fixed;
+
+    top:24px;
+
+    right:24px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+    z-index:9999;
+
+}
+
+.h13-toast{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    min-width:320px;
+
+    padding:16px 20px;
+
+    border-radius:var(--radius-md);
+
+    background:var(--surface);
+
+    border-left:6px solid var(--primary);
+
+    box-shadow:var(--shadow-lg);
+
+    opacity:0;
+
+    transform:translateX(120%);
+
+    transition:all .35s ease;
+
+}
+
+.h13-toast.show{
+
+    opacity:1;
+
+    transform:translateX(0);
+
+}
+
+.h13-toast.success{
+
+    border-color:var(--success);
+
+}
+
+.h13-toast.warning{
+
+    border-color:var(--warning);
+
+}
+
+.h13-toast.error{
+
+    border-color:var(--danger);
+
+}
+
+.h13-toast-icon{
+
+    font-size:24px;
+
+}
+
+.h13-toast-content{
+
+    flex:1;
+
+}
+
+.h13-toast-title{
+
+    font-weight:700;
+
+    margin-bottom:4px;
+
+}
+
+.h13-toast-message{
+
+    font-size:.9rem;
+
+    color:var(--text-light);
+
+}
+
+.h13-toast-close{
+
+    border:none;
+
+    background:none;
+
+    cursor:pointer;
+
+    font-size:20px;
+
+}
