@@ -1,0 +1,158 @@
+/* ==========================================================
+   HANGAR 13 TABS COMPONENT
+========================================================== */
+
+
+.h13-tabs{
+
+    width:100%;
+
+}
+
+
+
+.h13-tab-list{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:4px;
+
+    border-bottom:1px solid var(--border);
+
+}
+
+
+
+.h13-tab{
+
+    padding:14px 22px;
+
+    cursor:pointer;
+
+    font-weight:700;
+
+    color:var(--text-light);
+
+    border-bottom:3px solid transparent;
+
+    transition:.2s ease;
+
+}
+
+
+
+.h13-tab:hover{
+
+    color:var(--primary);
+
+}
+
+
+
+.h13-tab.active{
+
+    color:var(--primary);
+
+    border-bottom-color:var(--primary);
+
+}
+
+
+
+.h13-tab-panels{
+
+    padding-top:20px;
+
+}
+
+
+
+.h13-tab-panel{
+
+    display:none;
+
+}
+
+
+
+.h13-tab-panel.active{
+
+    display:block;
+
+    animation:
+
+    h13-tab-fade .25s ease;
+
+}
+
+
+
+@keyframes h13-tab-fade{
+
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(8px);
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+/* Vertical Variant */
+
+
+.h13-tabs.vertical{
+
+    display:flex;
+
+}
+
+
+
+.h13-tabs.vertical 
+.h13-tab-list{
+
+    flex-direction:column;
+
+    align-items:stretch;
+
+    border-bottom:none;
+
+    border-right:1px solid var(--border);
+
+}
+
+
+
+.h13-tabs.vertical 
+.h13-tab{
+
+    border-bottom:none;
+
+    border-right:3px solid transparent;
+
+}
+
+
+
+.h13-tabs.vertical 
+.h13-tab.active{
+
+    border-right-color:var(--primary);
+
+}
