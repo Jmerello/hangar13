@@ -1,0 +1,203 @@
+/* ==========================================================
+   HANGAR 13 NAVBAR COMPONENT
+========================================================== */
+
+
+.h13-navbar{
+
+    width:100%;
+
+    height:70px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:0 28px;
+
+    background:var(--surface);
+
+    border-bottom:1px solid var(--border);
+
+    box-shadow:var(--shadow-sm);
+
+    position:relative;
+
+    z-index:100;
+
+}
+
+
+
+/* Brand */
+
+
+.h13-navbar-brand{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    font-size:1.25rem;
+
+    font-weight:800;
+
+    color:var(--primary);
+
+}
+
+
+
+.h13-navbar-logo{
+
+    width:42px;
+
+    height:42px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+}
+
+
+
+/* Navigation */
+
+
+.h13-navbar-menu{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+
+}
+
+
+
+.h13-navbar-link{
+
+    padding:10px 16px;
+
+    border-radius:var(--radius-sm);
+
+    cursor:pointer;
+
+    font-weight:600;
+
+    transition:.2s ease;
+
+}
+
+
+
+.h13-navbar-link:hover{
+
+    background:rgba(0,102,204,.08);
+
+    color:var(--primary);
+
+}
+
+
+
+.h13-navbar-link.active{
+
+    color:var(--primary);
+
+    background:rgba(0,102,204,.12);
+
+}
+
+
+
+/* Actions */
+
+
+.h13-navbar-actions{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+}
+
+
+
+/* Mobile */
+
+
+.h13-navbar-toggle{
+
+    display:none;
+
+    cursor:pointer;
+
+    font-size:28px;
+
+}
+
+
+
+@media(max-width:768px){
+
+
+    .h13-navbar-toggle{
+
+        display:block;
+
+    }
+
+
+
+    .h13-navbar-menu{
+
+        position:absolute;
+
+        top:70px;
+
+        left:0;
+
+        width:100%;
+
+        flex-direction:column;
+
+        background:var(--surface);
+
+        border-bottom:1px solid var(--border);
+
+        max-height:0;
+
+        overflow:hidden;
+
+        transition:.3s ease;
+
+    }
+
+
+
+    .h13-navbar-menu.open{
+
+        max-height:400px;
+
+        padding:15px;
+
+    }
+
+
+
+    .h13-navbar-link{
+
+        width:100%;
+
+    }
+
+}
