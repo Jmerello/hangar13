@@ -1,1 +1,174 @@
 
+/* ==========================================================
+   HANGAR 13 CARD COMPONENT
+   Version: 1.0
+========================================================== */
+
+.h13-card{
+
+    display:flex;
+    flex-direction:column;
+
+    background:var(--surface);
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius-lg);
+
+    box-shadow:var(--shadow-sm);
+
+    overflow:hidden;
+
+    transition:
+        transform var(--transition-normal),
+        box-shadow var(--transition-normal);
+
+}
+
+.h13-card:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.h13-card-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 24px;
+
+    border-bottom:1px solid var(--border);
+
+    background:#fafafa;
+
+}
+
+.h13-card-title{
+
+    margin:0;
+
+    font-size:1.2rem;
+
+    font-weight:700;
+
+}
+
+.h13-card-subtitle{
+
+    margin-top:4px;
+
+    color:var(--text-light);
+
+    font-size:.9rem;
+
+}
+
+.h13-card-body{
+
+    padding:24px;
+
+    flex:1;
+
+}
+
+.h13-card-footer{
+
+    padding:20px 24px;
+
+    border-top:1px solid var(--border);
+
+    background:#fafafa;
+
+}
+
+/* ==========================================
+   Variants
+========================================== */
+
+.h13-card.primary{
+
+    border-top:5px solid var(--primary);
+
+}
+
+.h13-card.success{
+
+    border-top:5px solid var(--success);
+
+}
+
+.h13-card.warning{
+
+    border-top:5px solid var(--warning);
+
+}
+
+.h13-card.danger{
+
+    border-top:5px solid var(--danger);
+
+}
+
+/* ==========================================
+   Compact
+========================================== */
+
+.h13-card.compact .h13-card-body{
+
+    padding:12px;
+
+}
+
+/* ==========================================
+   Shadow Levels
+========================================== */
+
+.h13-card.shadow-none{
+
+    box-shadow:none;
+
+}
+
+.h13-card.shadow-sm{
+
+    box-shadow:var(--shadow-sm);
+
+}
+
+.h13-card.shadow-md{
+
+    box-shadow:var(--shadow-md);
+
+}
+
+.h13-card.shadow-lg{
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+/* ==========================================
+   Clickable
+========================================== */
+
+.h13-card.clickable{
+
+    cursor:pointer;
+
+}
+
+/* ==========================================
+   Width Utilities
+========================================== */
+
+.h13-card.full-width{
+
+    width:100%;
+
+}
