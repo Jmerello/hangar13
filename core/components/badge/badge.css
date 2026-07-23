@@ -1,0 +1,145 @@
+/* ==========================================================
+   HANGAR 13 BADGE COMPONENT
+========================================================== */
+
+.h13-badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:6px;
+
+    padding:5px 12px;
+
+    border-radius:999px;
+
+    font-size:.8rem;
+
+    font-weight:700;
+
+    line-height:1;
+
+    white-space:nowrap;
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+
+.h13-badge.primary{
+
+    background:var(--primary);
+
+}
+
+
+.h13-badge.success{
+
+    background:var(--success);
+
+}
+
+
+.h13-badge.warning{
+
+    background:var(--warning);
+
+    color:#111;
+
+}
+
+
+.h13-badge.danger{
+
+    background:var(--danger);
+
+}
+
+
+.h13-badge.info{
+
+    background:var(--info);
+
+}
+
+
+.h13-badge.dark{
+
+    background:#222;
+
+}
+
+
+.h13-badge.outline{
+
+    background:transparent;
+
+    border:1px solid currentColor;
+
+}
+
+
+.h13-badge.outline.primary{
+
+    color:var(--primary);
+
+}
+
+
+.h13-badge.outline.success{
+
+    color:var(--success);
+
+}
+
+
+.h13-badge.outline.warning{
+
+    color:var(--warning);
+
+}
+
+
+.h13-badge.outline.danger{
+
+    color:var(--danger);
+
+}
+
+
+.h13-badge.dot::before{
+
+    content:"";
+
+    width:8px;
+
+    height:8px;
+
+    border-radius:50%;
+
+    background:currentColor;
+
+}
+
+
+.h13-badge.large{
+
+    padding:8px 16px;
+
+    font-size:.95rem;
+
+}
+
+
+.h13-badge.small{
+
+    padding:4px 8px;
+
+    font-size:.7rem;
+
+}
