@@ -1,0 +1,137 @@
+/* ==========================================================
+   HANGAR 13 DROPDOWN COMPONENT
+========================================================== */
+
+
+.h13-dropdown{
+
+    position:relative;
+
+    display:inline-block;
+
+}
+
+
+.h13-dropdown-toggle{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    gap:10px;
+
+    cursor:pointer;
+
+}
+
+
+
+.h13-dropdown-menu{
+
+    position:absolute;
+
+    top:calc(100% + 8px);
+
+    right:0;
+
+    min-width:220px;
+
+    background:var(--surface);
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius-md);
+
+    box-shadow:var(--shadow-lg);
+
+    padding:8px;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transform:translateY(-10px);
+
+    transition:
+
+    all .2s ease;
+
+    z-index:1000;
+
+}
+
+
+
+.h13-dropdown.open .h13-dropdown-menu{
+
+    opacity:1;
+
+    visibility:visible;
+
+    transform:translateY(0);
+
+}
+
+
+
+.h13-dropdown-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    width:100%;
+
+    padding:12px 14px;
+
+    border-radius:var(--radius-sm);
+
+    cursor:pointer;
+
+    transition:.2s ease;
+
+}
+
+
+
+.h13-dropdown-item:hover{
+
+    background:rgba(0,102,204,.08);
+
+}
+
+
+
+.h13-dropdown-divider{
+
+    height:1px;
+
+    background:var(--border);
+
+    margin:8px 0;
+
+}
+
+
+
+.h13-dropdown-item.danger{
+
+    color:var(--danger);
+
+}
+
+
+
+.h13-dropdown-item.disabled{
+
+    opacity:.5;
+
+    cursor:not-allowed;
+
+    pointer-events:none;
+
+}
