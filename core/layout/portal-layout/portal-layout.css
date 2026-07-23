@@ -1,0 +1,162 @@
+/* ==========================================================
+   HANGAR 13 PORTAL LAYOUT
+========================================================== */
+
+
+.h13-portal{
+
+    min-height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    background:var(--background);
+
+}
+
+
+
+
+/* Portal Header */
+
+
+.h13-portal-header{
+
+    height:70px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    padding:0 30px;
+
+    background:var(--surface);
+
+    border-bottom:1px solid var(--border);
+
+}
+
+
+
+
+.h13-portal-brand{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    font-size:1.3rem;
+
+    font-weight:900;
+
+}
+
+
+
+/* Portal Body */
+
+
+.h13-portal-body{
+
+    flex:1;
+
+    display:flex;
+
+}
+
+
+
+
+.h13-portal-content{
+
+    flex:1;
+
+    padding:30px;
+
+}
+
+
+
+
+
+/* Portal Footer */
+
+
+.h13-portal-footer{
+
+    height:50px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-top:1px solid var(--border);
+
+    font-size:.85rem;
+
+    color:var(--text-light);
+
+}
+
+
+
+
+/* Role Colors */
+
+
+.h13-portal.admin
+.h13-portal-brand{
+
+    color:var(--primary);
+
+}
+
+
+
+.h13-portal.technician
+.h13-portal-brand{
+
+    color:var(--warning);
+
+}
+
+
+
+.h13-portal.customer
+.h13-portal-brand{
+
+    color:var(--success);
+
+}
+
+
+
+.h13-portal.fleet
+.h13-portal-brand{
+
+    color:var(--info);
+
+}
+
+
+
+
+
+@media(max-width:768px){
+
+
+    .h13-portal-content{
+
+        padding:15px;
+
+    }
+
+
+}
