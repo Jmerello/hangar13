@@ -1,1 +1,223 @@
 
+/* ==========================================================
+   HANGAR 13 BUTTON COMPONENT
+   Version: 1.0
+========================================================== */
+
+.h13-btn{
+
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    gap:10px;
+
+    min-width:120px;
+
+    padding:12px 22px;
+
+    border:none;
+    border-radius:var(--radius-md);
+
+    font-family:var(--font-family);
+    font-size:var(--font-size-md);
+    font-weight:600;
+
+    cursor:pointer;
+
+    user-select:none;
+
+    transition:all var(--transition-normal);
+
+    text-decoration:none;
+
+    white-space:nowrap;
+
+}
+
+/* ==========================================
+   Hover
+========================================== */
+
+.h13-btn:hover{
+
+    transform:translateY(-2px);
+
+    box-shadow:var(--shadow-md);
+
+}
+
+/* ==========================================
+   Active
+========================================== */
+
+.h13-btn:active{
+
+    transform:translateY(0);
+
+}
+
+/* ==========================================
+   Disabled
+========================================== */
+
+.h13-btn:disabled{
+
+    opacity:.45;
+
+    cursor:not-allowed;
+
+    transform:none;
+
+    box-shadow:none;
+
+}
+
+/* ==========================================
+   PRIMARY
+========================================== */
+
+.h13-btn.primary{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+.h13-btn.primary:hover{
+
+    background:var(--primary-hover);
+
+}
+
+/* ==========================================
+   SECONDARY
+========================================== */
+
+.h13-btn.secondary{
+
+    background:#6c757d;
+
+    color:white;
+
+}
+
+/* ==========================================
+   SUCCESS
+========================================== */
+
+.h13-btn.success{
+
+    background:var(--success);
+
+    color:white;
+
+}
+
+/* ==========================================
+   WARNING
+========================================== */
+
+.h13-btn.warning{
+
+    background:var(--warning);
+
+    color:white;
+
+}
+
+/* ==========================================
+   DANGER
+========================================== */
+
+.h13-btn.danger{
+
+    background:var(--danger);
+
+    color:white;
+
+}
+
+/* ==========================================
+   OUTLINE
+========================================== */
+
+.h13-btn.outline{
+
+    background:transparent;
+
+    color:var(--primary);
+
+    border:2px solid var(--primary);
+
+}
+
+/* ==========================================
+   GHOST
+========================================== */
+
+.h13-btn.ghost{
+
+    background:transparent;
+
+    color:var(--primary);
+
+}
+
+/* ==========================================
+   Sizes
+========================================== */
+
+.h13-btn.small{
+
+    padding:8px 14px;
+
+    font-size:.85rem;
+
+}
+
+.h13-btn.medium{
+
+    padding:12px 22px;
+
+}
+
+.h13-btn.large{
+
+    padding:16px 30px;
+
+    font-size:1.1rem;
+
+}
+
+/* ==========================================
+   Full Width
+========================================== */
+
+.h13-btn.block{
+
+    width:100%;
+
+}
+
+/* ==========================================
+   Rounded
+========================================== */
+
+.h13-btn.round{
+
+    border-radius:999px;
+
+}
+
+/* ==========================================
+   Loading
+========================================== */
+
+.h13-btn.loading{
+
+    pointer-events:none;
+
+    opacity:.75;
+
+}
