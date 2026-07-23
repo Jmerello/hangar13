@@ -1,0 +1,150 @@
+/* ==========================================================
+   HANGAR 13 PROGRESS COMPONENT
+========================================================== */
+
+
+.h13-progress-group{
+
+    width:100%;
+
+    margin:20px 0;
+
+}
+
+
+.h13-progress-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    margin-bottom:8px;
+
+}
+
+
+.h13-progress-label{
+
+    font-weight:600;
+
+}
+
+
+.h13-progress-value{
+
+    font-size:.85rem;
+
+    color:var(--text-light);
+
+}
+
+
+
+.h13-progress{
+
+    width:100%;
+
+    height:14px;
+
+    overflow:hidden;
+
+    background:#e5e7eb;
+
+    border-radius:999px;
+
+}
+
+
+
+.h13-progress-bar{
+
+    height:100%;
+
+    width:0%;
+
+    background:var(--primary);
+
+    border-radius:999px;
+
+    transition:
+
+        width .6s ease;
+
+}
+
+
+
+/* Variants */
+
+
+.h13-progress-bar.success{
+
+    background:var(--success);
+
+}
+
+
+.h13-progress-bar.warning{
+
+    background:var(--warning);
+
+}
+
+
+.h13-progress-bar.danger{
+
+    background:var(--danger);
+
+}
+
+
+
+.h13-progress.sm{
+
+    height:8px;
+
+}
+
+
+.h13-progress.lg{
+
+    height:22px;
+
+}
+
+
+
+/* Animated */
+
+
+.h13-progress-bar.animated{
+
+    background-size:30px 30px;
+
+    animation:
+
+    h13-progress-animation 1s linear infinite;
+
+}
+
+
+
+@keyframes h13-progress-animation{
+
+
+    from{
+
+        background-position:0 0;
+
+    }
+
+
+    to{
+
+        background-position:30px 0;
+
+    }
+
+}
