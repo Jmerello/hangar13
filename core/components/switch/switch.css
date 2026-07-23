@@ -1,0 +1,110 @@
+/* ==========================================================
+   HANGAR 13 SWITCH COMPONENT
+   Version 1.0
+========================================================== */
+
+.h13-switch-group{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    margin:18px 0;
+
+}
+
+.h13-switch{
+
+    position:relative;
+
+    display:inline-block;
+
+    width:58px;
+
+    height:30px;
+
+}
+
+.h13-switch input{
+
+    display:none;
+
+}
+
+.h13-slider{
+
+    position:absolute;
+
+    inset:0;
+
+    cursor:pointer;
+
+    background:#c7c7c7;
+
+    border-radius:999px;
+
+    transition:all var(--transition-normal);
+
+}
+
+.h13-slider::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:24px;
+
+    height:24px;
+
+    left:3px;
+
+    top:3px;
+
+    background:white;
+
+    border-radius:50%;
+
+    box-shadow:var(--shadow-sm);
+
+    transition:all var(--transition-normal);
+
+}
+
+.h13-switch input:checked + .h13-slider{
+
+    background:var(--success);
+
+}
+
+.h13-switch input:checked + .h13-slider::before{
+
+    transform:translateX(28px);
+
+}
+
+.h13-switch input:focus + .h13-slider{
+
+    box-shadow:0 0 0 4px rgba(0,102,204,.20);
+
+}
+
+.h13-switch input:disabled + .h13-slider{
+
+    opacity:.45;
+
+    cursor:not-allowed;
+
+}
+
+.h13-switch-label{
+
+    user-select:none;
+
+    cursor:pointer;
+
+    font-weight:600;
+
+}
