@@ -1,0 +1,147 @@
+/* ==========================================================
+   HANGAR 13 DASHBOARD LAYOUT
+========================================================== */
+
+
+.h13-dashboard{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:25px;
+
+}
+
+
+
+/* Header */
+
+
+.h13-dashboard-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+
+
+.h13-dashboard-title{
+
+    font-size:2rem;
+
+    font-weight:900;
+
+}
+
+
+
+.h13-dashboard-actions{
+
+    display:flex;
+
+    gap:12px;
+
+}
+
+
+
+/* Statistics Cards */
+
+
+.h13-dashboard-stats{
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(auto-fit,minmax(220px,1fr));
+
+    gap:20px;
+
+}
+
+
+
+/* Main Grid */
+
+
+.h13-dashboard-grid{
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(12,1fr);
+
+    gap:20px;
+
+}
+
+
+
+.h13-dashboard-panel{
+
+    background:var(--surface);
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius-md);
+
+    padding:25px;
+
+}
+
+
+
+.h13-span-12{
+
+    grid-column:span 12;
+
+}
+
+
+
+.h13-span-8{
+
+    grid-column:span 8;
+
+}
+
+
+
+.h13-span-6{
+
+    grid-column:span 6;
+
+}
+
+
+
+.h13-span-4{
+
+    grid-column:span 4;
+
+}
+
+
+
+@media(max-width:900px){
+
+
+    .h13-dashboard-grid{
+
+        display:flex;
+
+        flex-direction:column;
+
+    }
+
+
+}
