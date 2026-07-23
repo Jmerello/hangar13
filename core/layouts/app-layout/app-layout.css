@@ -1,0 +1,52 @@
+/* ==========================================================
+   HANGAR 13 APP LAYOUT
+========================================================== */
+
+
+.h13-app{
+
+    min-height:100vh;
+
+    display:flex;
+
+    background:var(--background);
+
+}
+
+
+
+.h13-app-main{
+
+    flex:1;
+
+    margin-left:260px;
+
+    min-height:100vh;
+
+    transition:.3s ease;
+
+}
+
+
+
+.h13-app-content{
+
+    padding:30px;
+
+}
+
+
+
+/* Mobile */
+
+@media(max-width:900px){
+
+
+    .h13-app-main{
+
+        margin-left:0;
+
+    }
+
+
+}
