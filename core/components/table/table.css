@@ -1,0 +1,156 @@
+/* ==========================================================
+   HANGAR 13 TABLE COMPONENT
+========================================================== */
+
+
+.h13-table-container{
+
+    width:100%;
+
+    overflow-x:auto;
+
+    background:var(--surface);
+
+    border-radius:var(--radius-md);
+
+    border:1px solid var(--border);
+
+}
+
+
+
+.h13-table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    min-width:700px;
+
+}
+
+
+
+.h13-table thead{
+
+    background:rgba(0,102,204,.08);
+
+}
+
+
+
+.h13-table th{
+
+    text-align:left;
+
+    padding:16px;
+
+    font-size:.85rem;
+
+    text-transform:uppercase;
+
+    font-weight:800;
+
+    color:var(--text-light);
+
+    border-bottom:1px solid var(--border);
+
+}
+
+
+
+.h13-table td{
+
+    padding:16px;
+
+    border-bottom:1px solid var(--border);
+
+}
+
+
+
+.h13-table tbody tr{
+
+    transition:.2s ease;
+
+}
+
+
+
+.h13-table tbody tr:hover{
+
+    background:rgba(0,102,204,.05);
+
+}
+
+
+
+.h13-table tbody tr:last-child td{
+
+    border-bottom:none;
+
+}
+
+
+
+/* Status Cell */
+
+
+.h13-table-status{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    font-weight:700;
+
+}
+
+
+
+.h13-table-status-dot{
+
+    width:10px;
+
+    height:10px;
+
+    border-radius:50%;
+
+}
+
+
+
+.h13-table-status-dot.success{
+
+    background:var(--success);
+
+}
+
+
+.h13-table-status-dot.warning{
+
+    background:var(--warning);
+
+}
+
+
+.h13-table-status-dot.danger{
+
+    background:var(--danger);
+
+}
+
+
+
+/* Actions */
+
+
+.h13-table-actions{
+
+    display:flex;
+
+    gap:8px;
+
+}
