@@ -1,0 +1,112 @@
+/* ==========================================================
+   HANGAR 13 SELECT COMPONENT
+   Version: 1.0
+========================================================== */
+
+.h13-select{
+
+    position:relative;
+
+    width:100%;
+
+    margin-bottom:20px;
+
+}
+
+.h13-select-label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-weight:600;
+
+}
+
+.h13-select-search{
+
+    width:100%;
+
+    padding:12px 16px;
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius-md);
+
+    background:var(--surface);
+
+    color:var(--text);
+
+    transition:all var(--transition-normal);
+
+}
+
+.h13-select-search:focus{
+
+    outline:none;
+
+    border-color:var(--primary);
+
+    box-shadow:0 0 0 4px rgba(0,102,204,.15);
+
+}
+
+.h13-select-list{
+
+    position:absolute;
+
+    top:100%;
+
+    left:0;
+
+    right:0;
+
+    margin-top:6px;
+
+    background:var(--surface);
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius-md);
+
+    box-shadow:var(--shadow-lg);
+
+    max-height:250px;
+
+    overflow-y:auto;
+
+    display:none;
+
+    z-index:var(--z-dropdown);
+
+}
+
+.h13-option{
+
+    padding:12px 16px;
+
+    cursor:pointer;
+
+    transition:background var(--transition-fast);
+
+}
+
+.h13-option:hover{
+
+    background:rgba(0,102,204,.08);
+
+}
+
+.h13-option.selected{
+
+    background:var(--primary);
+
+    color:#fff;
+
+}
+
+.h13-select.open .h13-select-list{
+
+    display:block;
+
+}
