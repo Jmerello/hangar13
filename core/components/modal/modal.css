@@ -1,0 +1,115 @@
+/*==========================================================
+    HANGAR 13 MODAL
+==========================================================*/
+
+.h13-modal{
+
+    position:fixed;
+
+    inset:0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:rgba(0,0,0,.55);
+
+    backdrop-filter:blur(6px);
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:all var(--transition-normal);
+
+    z-index:var(--z-modal);
+
+}
+
+.h13-modal.show{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+.h13-modal-window{
+
+    width:min(700px,90vw);
+
+    background:var(--surface);
+
+    border-radius:var(--radius-lg);
+
+    box-shadow:var(--shadow-lg);
+
+    overflow:hidden;
+
+    transform:translateY(25px);
+
+    transition:all var(--transition-normal);
+
+}
+
+.h13-modal.show .h13-modal-window{
+
+    transform:translateY(0);
+
+}
+
+.h13-modal-header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:20px 28px;
+
+    border-bottom:1px solid var(--border);
+
+}
+
+.h13-modal-title{
+
+    font-size:1.4rem;
+
+    font-weight:700;
+
+}
+
+.h13-modal-close{
+
+    border:none;
+
+    background:none;
+
+    cursor:pointer;
+
+    font-size:28px;
+
+}
+
+.h13-modal-body{
+
+    padding:28px;
+
+}
+
+.h13-modal-footer{
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    gap:12px;
+
+    padding:20px 28px;
+
+    border-top:1px solid var(--border);
+
+}
